@@ -87,7 +87,7 @@ h1 em { font-weight: 400; font-style: normal; color: #77706a; }
 .quick-view[open] > summary { color: var(--red); }
 .quick-content { background: #f8f7f5; padding: 14px 12px 12px; margin-top: 12px; border: 1px solid #eeeae4; }
 .quick-heading { font-size: 11px; font-weight: 800; margin-bottom: 11px; }
-.quick-label { font-size: 13x; font-weight: 800; color: #727272; margin: 9px 0 7px; }
+.quick-label { font-size: 13px; font-weight: 800; color: #727272; margin: 9px 0 7px; }
 .option-row { display: flex; flex-wrap: wrap; gap: 5px; }
 .option { cursor: pointer; }
 .option input { position: absolute; width: 1px; height: 1px; opacity: 0; }
