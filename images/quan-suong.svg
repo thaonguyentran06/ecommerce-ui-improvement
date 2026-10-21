@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Hình minh họa quần áo">
+<defs>
+<filter id="ds" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="23"/></filter>
+<linearGradient id="fabric" x1="0" y1="0" x2=".85" y2="1"><stop offset="0" stop-color="#737a7d"/><stop offset=".47" stop-color="#454a51"/><stop offset="1" stop-color="#272b31"/></linearGradient>
+<linearGradient id="fold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#454a51" stop-opacity=".05"/><stop offset=".47" stop-color="#272b31" stop-opacity=".25"/><stop offset="1" stop-color="#737a7d" stop-opacity=".04"/></linearGradient>
+</defs>
+<rect width="900" height="1100" fill="#e3e4e3"/>
+<circle cx="775" cy="205" r="315" fill="#ffffff" opacity=".22"/>
+<path d="M0 930Q400 850 900 918v182H0z" fill="#ffffff" opacity=".11"/>
+<ellipse cx="452" cy="880" rx="310" ry="55" fill="#453d33" opacity=".15" filter="url(#ds)"/>
+<path d="M281 230 626 230 639 493 633 868 505 869 457 520 418 870 275 865 279 494Z" fill="url(#fabric)" stroke="#3e444d" stroke-width="5"/>
+<path d="M284 249H624" stroke="#252a30" stroke-width="13"/>
+<path d="M454 254V487" stroke="#242a30" stroke-width="4"/>
+<path d="M459 482 512 868" stroke="#363c43" stroke-width="3"/>
+<path d="M281 496Q366 518 454 489Q542 518 635 495" fill="none" stroke="#5e656c" stroke-width="3"/>
+<path d="M280 842Q350 856 418 848M507 846Q574 854 632 844" stroke="#20252b" stroke-width="7" fill="none"/>
+<path d="M325 283 328 824M599 286 578 824" stroke="#9ba0a5" stroke-opacity=".23" stroke-width="17"/><path d="M362 292Q407 531 373 819M546 294Q505 530 535 819" stroke="#0a0d12" stroke-opacity=".17" stroke-width="10"/><path d="M297 329q45 51 99 15M611 328q-43 50-95 15" fill="none" stroke="#343941" stroke-width="4"/>
+</svg>

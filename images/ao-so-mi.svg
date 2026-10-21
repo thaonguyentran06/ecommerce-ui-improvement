@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Hình minh họa quần áo">
+<defs>
+<filter id="ds" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="23"/></filter>
+<linearGradient id="fabric" x1="0" y1="0" x2=".85" y2="1"><stop offset="0" stop-color="#d1dde0"/><stop offset=".47" stop-color="#a5b9c3"/><stop offset="1" stop-color="#809da8"/></linearGradient>
+<linearGradient id="fold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5b9c3" stop-opacity=".05"/><stop offset=".47" stop-color="#809da8" stop-opacity=".25"/><stop offset="1" stop-color="#d1dde0" stop-opacity=".04"/></linearGradient>
+</defs>
+<rect width="900" height="1100" fill="#e5e9e7"/>
+<circle cx="775" cy="205" r="315" fill="#ffffff" opacity=".22"/>
+<path d="M0 930Q400 850 900 918v182H0z" fill="#ffffff" opacity=".11"/>
+<ellipse cx="452" cy="880" rx="310" ry="55" fill="#453d33" opacity=".15" filter="url(#ds)"/>
+<path d="M321 204 255 236 129 314 205 584 313 547 319 856 582 856 587 546 694 585 770 314 649 236 579 204 514 257 445 281 389 258Z" fill="url(#fabric)" stroke="#8198a6" stroke-width="4"/>
+<path d="M321 204 393 255 449 315 398 401 314 259Z" fill="#bdcbd0" stroke="#8199a5" stroke-width="3"/>
+<path d="M579 204 514 255 449 315 502 402 588 261Z" fill="#a5b9c3" stroke="#8199a5" stroke-width="3"/>
+<path d="M449 315 449 850" stroke="#7895a4" stroke-width="4"/>
+<path d="M205 584 176 577M694 585l32-9" stroke="#8199a5" stroke-width="7"/>
+<path d="M320 832Q450 857 582 832" fill="none" stroke="#7895a4" stroke-width="5"/>
+<g fill="#617e8e"><circle cx="455" cy="400" r="5"/><circle cx="455" cy="475" r="5"/><circle cx="455" cy="550" r="5"/><circle cx="455" cy="625" r="5"/><circle cx="455" cy="700" r="5"/><circle cx="455" cy="775" r="5"/></g><path d="M341 306Q380 535 342 790M566 317Q536 543 565 818" fill="none" stroke="#d5e0df" stroke-opacity=".5" stroke-width="18"/><path d="M234 337l-30 208M668 331l26 208" stroke="#7b97a7" stroke-opacity=".25" stroke-width="17"/>
+</svg>

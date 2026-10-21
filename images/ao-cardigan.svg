@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Hình minh họa quần áo">
+<defs>
+<filter id="ds" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="23"/></filter>
+<linearGradient id="fabric" x1="0" y1="0" x2=".85" y2="1"><stop offset="0" stop-color="#e5b7ad"/><stop offset=".47" stop-color="#cd938e"/><stop offset="1" stop-color="#b87f7c"/></linearGradient>
+<linearGradient id="fold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#cd938e" stop-opacity=".05"/><stop offset=".47" stop-color="#b87f7c" stop-opacity=".25"/><stop offset="1" stop-color="#e5b7ad" stop-opacity=".04"/></linearGradient>
+</defs>
+<rect width="900" height="1100" fill="#ece1df"/>
+<circle cx="775" cy="205" r="315" fill="#ffffff" opacity=".22"/>
+<path d="M0 930Q400 850 900 918v182H0z" fill="#ffffff" opacity=".11"/>
+<ellipse cx="452" cy="880" rx="310" ry="55" fill="#453d33" opacity=".15" filter="url(#ds)"/>
+<path d="M335 211 286 243 140 318 198 594 312 568 307 869 590 869 587 568 699 594 762 318 615 243 565 211 497 256 449 288 405 256Z" fill="url(#fabric)" stroke="#ab7976" stroke-width="4"/>
+<path d="M337 215Q394 247 449 289L445 865 391 865 390 312Z" fill="#d4a39b" stroke="#aa7773" stroke-width="3"/>
+<path d="M565 215Q507 249 449 289L455 865 511 865 511 312Z" fill="#d7a49c" stroke="#aa7773" stroke-width="3"/>
+<path d="M453 302V861" stroke="#9e6869" stroke-width="4"/>
+<path d="M311 832 589 832" stroke="#a87976" stroke-width="7"/>
+<path d="M199 570l113-27M588 542l108 29" stroke="#ac7e79" stroke-width="6"/>
+<g fill="#956863"><circle cx="469" cy="383" r="7"/><circle cx="469" cy="471" r="7"/><circle cx="469" cy="559" r="7"/><circle cx="469" cy="647" r="7"/><circle cx="469" cy="735" r="7"/></g><path d="M344 353L336 804M565 353L574 800" stroke="#f1c7b7" stroke-width="16" opacity=".28"/><g stroke="#a77773" stroke-opacity=".16" stroke-width="3"><path d="M310 340h80M513 340h76"/><path d="M310 371h80M513 371h76"/><path d="M310 402h80M513 402h76"/><path d="M310 433h80M513 433h76"/><path d="M310 464h80M513 464h76"/><path d="M310 495h80M513 495h76"/><path d="M310 526h80M513 526h76"/><path d="M310 557h80M513 557h76"/><path d="M310 588h80M513 588h76"/><path d="M310 619h80M513 619h76"/><path d="M310 650h80M513 650h76"/><path d="M310 681h80M513 681h76"/><path d="M310 712h80M513 712h76"/><path d="M310 743h80M513 743h76"/><path d="M310 774h80M513 774h76"/><path d="M310 805h80M513 805h76"/></g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Hình minh họa quần áo">
+<defs>
+<filter id="ds" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="23"/></filter>
+<linearGradient id="fabric" x1="0" y1="0" x2=".85" y2="1"><stop offset="0" stop-color="#f5f0e4"/><stop offset=".47" stop-color="#dfd4c1"/><stop offset="1" stop-color="#cbbda8"/></linearGradient>
+<linearGradient id="fold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#dfd4c1" stop-opacity=".05"/><stop offset=".47" stop-color="#cbbda8" stop-opacity=".25"/><stop offset="1" stop-color="#f5f0e4" stop-opacity=".04"/></linearGradient>
+</defs>
+<rect width="900" height="1100" fill="#e9e4dd"/>
+<circle cx="775" cy="205" r="315" fill="#ffffff" opacity=".22"/>
+<path d="M0 930Q400 850 900 918v182H0z" fill="#ffffff" opacity=".11"/>
+<ellipse cx="452" cy="880" rx="310" ry="55" fill="#453d33" opacity=".15" filter="url(#ds)"/>
+<path d="M327 224 279 257 154 313 213 469 316 435 308 856 589 856 581 435 683 468 746 313 617 256 571 223Q527 253 451 253Q377 253 327 224Z" fill="url(#fabric)" stroke="#ada395" stroke-width="4" stroke-linejoin="round"/>
+<path d="M328 224 Q374 274 450 272 Q529 274 571 223 L549 292 Q456 328 349 293Z" fill="#c8bead" stroke="#bdb19f" stroke-width="4"/>
+<path d="M371 235Q452 302 529 235" fill="none" stroke="#a69b89" stroke-width="5"/>
+<path d="M312 831Q452 850 584 831" fill="none" stroke="#beb3a1" stroke-width="5"/>
+<path d="M219 433L180 322M680 432l40-111" fill="none" stroke="#c6bdaf" stroke-width="5"/>
+<path d="M335 324C341 491 340 675 364 840" fill="none" stroke="url(#fold)" stroke-width="30"/><path d="M562 305C546 490 565 688 547 837" fill="none" stroke="#fff" stroke-opacity=".19" stroke-width="20"/><path d="M450 331Q441 560 459 802" fill="none" stroke="#988c7a" stroke-opacity=".09" stroke-width="18"/>
+</svg>

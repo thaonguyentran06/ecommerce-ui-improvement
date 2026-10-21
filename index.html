@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giao diện minh họa cải tiến danh mục sản phẩm với chức năng Xem nhanh, xây dựng bằng HTML5 và CSS3.">
+  <title>Danh mục sản phẩm | Bài tập cải tiến giao diện</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#danh-sach">Bỏ qua để đến danh sách sản phẩm</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#trang-chu" aria-label="Mở đầu trang giao diện mẫu">
+        <span class="brand-square">U<span>+</span></span>
+        <span class="brand-caption">UI CONCEPT<br>STUDY</span>
+      </a>
+      <nav class="top-nav" aria-label="Điều hướng chính">
+        <a class="active" href="#danh-sach" aria-current="page">Danh mục</a>
+        <a href="#cai-tien">Ý tưởng cải tiến</a>
+      </nav>
+      <span class="prototype-label">BẢN DEMO · HTML / CSS</span>
+    </div>
+  </header>
+
+  <main id="trang-chu">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Đường dẫn trang">
+        <span>Trang chủ</span><span aria-hidden="true">/</span><span>Nữ</span><span aria-hidden="true">/</span><strong>Trang phục thường ngày</strong>
+      </nav>
+
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">BỘ SƯU TẬP MINH HỌA</p>
+          <h1 id="page-title">Đơn giản để<br><em>mặc theo cách bạn.</em></h1>
+          <p class="hero-desc">Khám phá 4 mẫu trang phục với thông tin rõ ràng và trải nghiệm <strong>Xem nhanh</strong> ngay trong danh sách sản phẩm.</p>
+        </div>
+        <div class="hero-mark" aria-hidden="true"><span>LESS<br>CLICK,<br>MORE<br>CLARITY.</span></div>
+      </section>
+
+      <section class="catalog" id="danh-sach" aria-labelledby="catalog-title">
+        <div class="section-topline">
+          <div>
+            <p class="eyebrow">CHỌN PHONG CÁCH</p>
+            <h2 id="catalog-title">Sản phẩm nổi bật</h2>
+          </div>
+          <p class="item-counter">04 sản phẩm mẫu · Giá minh họa</p>
+        </div>
+
+        <div class="catalog-layout">
+          <aside class="sidebar" aria-label="Bộ lọc sản phẩm">
+            <details class="filter-panel" open>
+              <summary>Bộ lọc theo loại sản phẩm <span aria-hidden="true">＋</span></summary>
+              <div class="filter-body">
+                <p class="filter-hint">Chọn loại sản phẩm để lọc danh sách bằng CSS, không cần JavaScript.</p>
+                <div class="filter-options" role="group" aria-label="Loại sản phẩm">
+                  <label class="filter-choice">
+                    <input type="radio" name="loai-san-pham" id="loc-tat-ca" checked>
+                    <span>Tất cả <small>04</small></span>
+                  </label>
+                  <label class="filter-choice">
+                    <input type="radio" name="loai-san-pham" id="loc-ao">
+                    <span>Áo <small>03</small></span>
+                  </label>
+                  <label class="filter-choice">
+                    <input type="radio" name="loai-san-pham" id="loc-quan">
+                    <span>Quần <small>01</small></span>
+                  </label>
+                </div>
+                <div class="filter-note">
+                  <span class="tiny-icon" aria-hidden="true">i</span>
+                  Màu và cỡ được chọn trong phần “Xem nhanh” của từng sản phẩm.
+                </div>
+              </div>
+            </details>
+          </aside>
+
+          <div class="product-grid" aria-label="Danh sách các sản phẩm mẫu">
+            <article class="product-card" data-type="ao">
+              <div class="image-area">
+                <img src="images/ao-thun.svg" alt="Minh họa áo thun cổ tròn màu kem" width="900" height="1100">
+                <span class="product-tag">ESSENTIAL</span>
+              </div>
+              <div class="card-content">
+                <p class="product-category">ÁO THUN / NỮ</p>
+                <h3>Áo Thun Cotton Cổ Tròn</h3>
+                <p class="product-price">299.000 <span>đ</span></p>
+                <p class="color-preview" aria-label="Màu minh họa: kem, đen, xanh sage"><i class="dot cream"></i><i class="dot ink"></i><i class="dot sage"></i><span>3 màu</span></p>
+                <details class="quick-view">
+                  <summary>Xem nhanh <span aria-hidden="true">↗</span></summary>
+                  <div class="quick-content">
+                    <p class="quick-heading">Lựa chọn minh họa</p>
+                    <p class="quick-label">Màu sắc</p>
+                    <div class="option-row">
+                      <label class="option"><input type="radio" name="mau-1" checked><span>Kem</span></label>
+                      <label class="option"><input type="radio" name="mau-1"><span>Đen</span></label>
+                      <label class="option"><input type="radio" name="mau-1"><span>Xanh</span></label>
+                    </div>
+                    <p class="quick-label">Kích cỡ</p>
+                    <div class="option-row">
+                      <label class="option"><input type="radio" name="co-1"><span>S</span></label>
+                      <label class="option"><input type="radio" name="co-1" checked><span>M</span></label>
+                      <label class="option"><input type="radio" name="co-1"><span>L</span></label>
+                    </div>
+                    <p class="quick-disclaimer">Bản mẫu chưa có chức năng thêm vào giỏ hàng.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="product-card" data-type="ao">
+              <div class="image-area">
+                <img src="images/ao-so-mi.svg" alt="Minh họa áo sơ mi dài tay màu xanh xám" width="900" height="1100">
+                <span class="product-tag">NEW IN</span>
+              </div>
+              <div class="card-content">
+                <p class="product-category">ÁO SƠ MI / NỮ</p>
+                <h3>Áo Sơ Mi Linen Dáng Suông</h3>
+                <p class="product-price">499.000 <span>đ</span></p>
+                <p class="color-preview" aria-label="Màu minh họa: xanh xám, kem"><i class="dot slate"></i><i class="dot cream"></i><span>2 màu</span></p>
+                <details class="quick-view">
+                  <summary>Xem nhanh <span aria-hidden="true">↗</span></summary>
+                  <div class="quick-content">
+                    <p class="quick-heading">Lựa chọn minh họa</p>
+                    <p class="quick-label">Màu sắc</p>
+                    <div class="option-row">
+                      <label class="option"><input type="radio" name="mau-2" checked><span>Xanh</span></label>
+                      <label class="option"><input type="radio" name="mau-2"><span>Kem</span></label>
+                    </div>
+                    <p class="quick-label">Kích cỡ</p>
+                    <div class="option-row">
+                      <label class="option"><input type="radio" name="co-2"><span>S</span></label>
+                      <label class="option"><input type="radio" name="co-2" checked><span>M</span></label>
+                      <label class="option"><input type="radio" name="co-2"><span>L</span></label>
+                    </div>
+                    <p class="quick-disclaimer">Bản mẫu chưa có chức năng thêm vào giỏ hàng.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="product-card" data-type="ao">
+              <div class="image-area">
+                <img src="images/ao-cardigan.svg" alt="Minh họa áo cardigan dệt kim màu hồng đất" width="900" height="1100">
+                <span class="product-tag sale-tag">ƯU ĐÃI</span>
+              </div>
+              <div class="card-content">
+                <p class="product-category">ÁO LEN / NỮ</p>
+                <h3>Áo Cardigan Dệt Kim Mềm</h3>
+                <p class="product-price sale-price">399.000 <span>đ</span> <del>499.000 đ</del></p>
+                <p class="color-preview" aria-label="Màu minh họa: hồng đất, nâu, kem"><i class="dot rose"></i><i class="dot brown"></i><i class="dot cream"></i><span>3 màu</span></p>
+                <details class="quick-view">
+                  <summary>Xem nhanh <span aria-hidden="true">↗</span></summary>
+                  <div class="quick-content">
+                    <p class="quick-heading">Lựa chọn minh họa</p>
+                    <p class="quick-label">Màu sắc</p>
+                    <div class="option-row">
+                      <label class="option"><input type="radio" name="mau-3" checked><span>Hồng đất</span></label>
+                      <label class="option"><input type="radio" name="mau-3"><span>Nâu</span></label>
+                      <label class="option"><input type="radio" name="mau-3"><span>Kem</span></label>
+                    </div>
+                    <p class="quick-label">Kích cỡ</p>
+                    <div class="option-row">
+                      <label class="option"><input type="radio" name="co-3"><span>S</span></label>
+                      <label class="option"><input type="radio" name="co-3" checked><span>M</span></label>
+                      <label class="option"><input type="radio" name="co-3"><span>L</span></label>
+                    </div>
+                    <p class="quick-disclaimer">Bản mẫu chưa có chức năng thêm vào giỏ hàng.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+
+            <article class="product-card" data-type="quan">
+              <div class="image-area">
+                <img src="images/quan-suong.svg" alt="Minh họa quần dài ống suông màu than" width="900" height="1100">
+                <span class="product-tag">BEST PICK</span>
+              </div>
+              <div class="card-content">
+                <p class="product-category">QUẦN / NỮ</p>
+                <h3>Quần Dài Ống Suông Cạp Cao</h3>
+                <p class="product-price">599.000 <span>đ</span></p>
+                <p class="color-preview" aria-label="Màu minh họa: than, be"><i class="dot ink"></i><i class="dot tan"></i><span>2 màu</span></p>
+                <details class="quick-view">
+                  <summary>Xem nhanh <span aria-hidden="true">↗</span></summary>
+                  <div class="quick-content">
+                    <p class="quick-heading">Lựa chọn minh họa</p>
+                    <p class="quick-label">Màu sắc</p>
+                    <div class="option-row">
+                      <label class="option"><input type="radio" name="mau-4" checked><span>Than</span></label>
+                      <label class="option"><input type="radio" name="mau-4"><span>Be</span></label>
+                    </div>
+                    <p class="quick-label">Kích cỡ</p>
+                    <div class="option-row">
+                      <label class="option"><input type="radio" name="co-4"><span>S</span></label>
+                      <label class="option"><input type="radio" name="co-4" checked><span>M</span></label>
+                      <label class="option"><input type="radio" name="co-4"><span>L</span></label>
+                    </div>
+                    <p class="quick-disclaimer">Bản mẫu chưa có chức năng thêm vào giỏ hàng.</p>
+                  </div>
+                </details>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="design-note" id="cai-tien" aria-labelledby="design-note-title">
+        <p class="eyebrow">Ý TƯỞNG CẢI TIẾN</p>
+        <h2 id="design-note-title">Thông tin xuất hiện đúng lúc.</h2>
+        <p>Thay vì mở từng trang chi tiết chỉ để kiểm tra màu và cỡ, người dùng có thể chọn <strong>“Xem nhanh”</strong> trong thẻ sản phẩm. Đây là giao diện học tập lấy cảm hứng từ việc khảo sát UNIQLO Việt Nam, <strong>không phải website chính thức của UNIQLO.</strong></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>UI CONCEPT STUDY / BÀI TẬP HTML5 &amp; CSS3</span>
+      <span>Hình minh họa và giá bán đều là dữ liệu mẫu.</span>
+    </div>
+  </footer>
+</body>
+</html>
