@@ -117,3 +117,102 @@ Các thuộc tính liên quan gồm `font-family`, `font-size`, `font-weight`, `
 - **`font-family`, `font-size`, `font-weight`, `line-height`, `letter-spacing`:** Điều chỉnh font, cỡ chữ, độ đậm, chiều cao dòng và khoảng cách ký tự.
 
 **Kết luận:** Các công cụ AI hỗ trợ phân tích, đề xuất và tạo mã nguồn ban đầu; tôi kiểm tra kết quả, xác định những nhận xét cần điều chỉnh và thực hành sửa giao diện để hiểu rõ hơn cách HTML5/CSS3 hoạt động.
+
+---
+
+# NHẬT KÝ SỬ DỤNG AI – BUỔI 2
+
+## 1. Thông tin chung
+
+- **Dự án:** Cải tiến giao diện danh mục sản phẩm UNIQLO
+- **Công cụ AI:** ChatGPT
+- **Ngôn ngữ lập trình:** HTML5, CSS3
+- **Mục tiêu:** Củng cố cấu trúc HTML5, thực hành CSS và cải thiện giao diện dựa trên kết quả kiểm tra thực tế.
+
+## 2. Nội dung sử dụng AI
+
+### 2.1. Kiểm tra cấu trúc HTML5
+
+**Yêu cầu gửi AI:** Hướng dẫn rà soát các phần tử HTML5 có ngữ nghĩa, thứ bậc tiêu đề, hình ảnh, thuộc tính alt và các liên kết trong mã nguồn hiện tại.
+
+**Kết quả:** AI đề xuất chuyển tiêu đề "Lựa chọn minh họa" từ thẻ `p` sang `h4`.
+
+**Thực hiện:** Chỉnh sửa tại bốn thẻ sản phẩm, lưu mã nguồn và kiểm tra lại chức năng Xem nhanh trên Chrome.
+
+### 2.2. Kiểm tra liên kết CSS
+
+**Yêu cầu gửi AI:** Hướng dẫn kiểm tra liên kết giữa `index.html` và `css/style.css`, giải thích các thuộc tính CSS cơ bản.
+
+**Kết quả:** AI hướng dẫn thử thay đổi biến màu nền `--paper`.
+
+**Thực hiện:** Đổi màu nền từ `#ffffff` sang `#ffe4e6`, kiểm tra trên Chrome và khôi phục màu trắng sau thử nghiệm.
+
+### 2.3. CSS Selector và Box Model
+
+**Yêu cầu gửi AI:** Hướng dẫn cải thiện thẻ sản phẩm bằng các thuộc tính margin, padding, border và border-radius.
+
+**Kết quả:** AI đề xuất điều chỉnh khoảng cách và góc bo thẻ sản phẩm.
+
+**Thực hiện:**
+- Bo góc thẻ sản phẩm 8px.
+- Điều chỉnh padding thành `20px 18px 20px`.
+- Tăng kích thước nhãn phân loại lên 13px.
+- Tăng khoảng cách dưới giá bán lên 20px.
+
+### 2.4. Thực hành Flexbox
+
+**Yêu cầu gửi AI:** Hướng dẫn sử dụng Flexbox để căn chỉnh các ô màu sắc và kích cỡ trong chức năng Xem nhanh.
+
+**Kết quả:** AI giải thích `display: flex`, `flex-wrap`, `gap`, `justify-content` và `align-items`.
+
+**Thực hiện:** Tăng gap từ 5px lên 10px, thử nghiệm `space-between` rồi lựa chọn `flex-start`, kết hợp `align-items: center`.
+
+### 2.5. Thực hành CSS Grid
+
+**Yêu cầu gửi AI:** Hướng dẫn thay đổi số cột danh sách sản phẩm bằng CSS Grid và kiểm tra responsive.
+
+**Kết quả:** AI hướng dẫn thử nghiệm bố cục hai cột, ba cột và kiểm tra Media Queries.
+
+**Thực hiện:** Thử nghiệm các bố cục trên Chrome, phát hiện lỗi bộ chọn CSS có dấu chấm dư trong Media Query, sửa lỗi và khôi phục bố cục responsive.
+
+### 2.6. Hiệu ứng Hover và Focus
+
+**Yêu cầu gửi AI:** Hướng dẫn cải thiện hiệu ứng Hover và kiểm tra trạng thái Focus-visible bằng bàn phím.
+
+**Kết quả:** AI đề xuất điều chỉnh bóng đổ và hướng dẫn sử dụng phím Tab.
+
+**Thực hiện:** Điều chỉnh `box-shadow` của `.product-card:hover`, kiểm tra đường viền xanh xuất hiện khi Focus vào chức năng Xem nhanh.
+
+### 2.7. Kiểm tra và điều chỉnh giao diện
+
+**Yêu cầu gửi AI:** Hỗ trợ xác định nguyên nhân khiến một số nhãn tiếng Việt hiển thị chưa đồng nhất về kiểu chữ, độ đậm và khoảng cách ký tự.
+
+**Kết quả:** AI hướng dẫn kiểm tra các thuộc tính CSS bằng Chrome DevTools và đề xuất điều chỉnh font chữ.
+
+**Thực hiện:**
+- Kiểm tra `font-family` trong DevTools.
+- Điều chỉnh font và độ đậm của nhãn bộ lọc.
+- Điều chỉnh `.eyebrow` để giảm khoảng cách ký tự.
+- Kiểm tra lại trên máy tính và màn hình điện thoại 390px.
+
+## 3. Kiểm chứng và điều chỉnh đề xuất AI
+
+Không áp dụng toàn bộ đề xuất AI ngay lập tức. Mỗi thay đổi được thực hiện trên mã nguồn và kiểm tra bằng Google Chrome.
+
+Trong quá trình thực hành, một số phương án ban đầu chưa phù hợp:
+
+- `justify-content: space-between` làm các ô lựa chọn bị phân bố xa nhau, vì vậy chuyển sang `flex-start`.
+- Khi thử nghiệm CSS Grid, bố cục chưa thay đổi đúng do lỗi bộ chọn trong Media Query. Lỗi được xác định và chỉnh sửa sau khi kiểm tra mã nguồn.
+- Các đề xuất sửa font ban đầu chưa giải quyết hoàn toàn vấn đề. Sau khi kiểm tra bằng DevTools, các thuộc tính liên quan được điều chỉnh và kiểm tra lại.
+
+## 4. Kết quả và bài học
+
+Qua quá trình thực hành, em hiểu rõ hơn cách sử dụng HTML5 có ngữ nghĩa, CSS Selector, Box Model, Flexbox, CSS Grid và các trạng thái Hover, Focus.
+
+AI hỗ trợ giải thích kiến thức, đề xuất cách chỉnh sửa và hướng dẫn tìm lỗi. Tuy nhiên, kết quả của AI được đối chiếu với mã nguồn và giao diện thực tế trước khi áp dụng.
+
+Những thay đổi đã thực hiện được lưu trong repository GitHub.
+
+**Repository:** https://github.com/thaonguyentran06/ecommerce-ui-improvement
+
+**Website:** https://thaonguyentran06.github.io/ecommerce-ui-improvement/
