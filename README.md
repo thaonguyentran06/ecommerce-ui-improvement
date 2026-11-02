@@ -88,3 +88,57 @@ Chi tiết về các prompt và quá trình sử dụng AI được trình bày 
 ---
 
 **Ghi chú:** Website phục vụ mục đích học tập. Hình ảnh sản phẩm được tạo riêng để minh họa, không phải ảnh sản phẩm chính thức của UNIQLO. Tên và giá sản phẩm là dữ liệu mẫu.
+## 8. Thực hành Buổi 2 – HTML5 và CSS3
+
+### 8.1. Mục tiêu thực hành
+
+Tiếp tục hoàn thiện trang danh mục sản phẩm đã xây dựng ở Buổi 1, tập trung củng cố cấu trúc HTML5, thực hành CSS Selector, Box Model, Flexbox, CSS Grid và các hiệu ứng Hover, Focus.
+
+### 8.2. Những thay đổi đã thực hiện
+
+**HTML5**
+- Kiểm tra các phần tử HTML5 có ngữ nghĩa.
+- Thay thẻ `p` bằng `h4` cho tiêu đề “Lựa chọn minh họa” tại bốn thẻ sản phẩm.
+- Giữ nguyên cấu trúc HTML và chức năng Xem nhanh.
+
+**CSS Selector và Box Model**
+- Bổ sung `border-radius: 8px` và `overflow: hidden` cho thẻ sản phẩm.
+- Điều chỉnh `padding` của `.card-content` thành `20px 18px 20px`.
+- Tăng kích thước chữ phân loại sản phẩm từ `9px` lên `13px`.
+- Tăng khoảng cách dưới giá sản phẩm từ `15px` lên `20px`.
+
+**Flexbox**
+- Tăng `gap` của `.option-row` từ `5px` lên `10px`.
+- Sử dụng `justify-content: flex-start` và `align-items: center` để căn chỉnh các ô màu sắc, kích cỡ.
+
+**CSS Grid**
+- Thử nghiệm bố cục danh sách sản phẩm với hai cột và ba cột.
+- Khôi phục bố cục responsive: bốn cột trên màn hình rộng, ba cột ở màn hình trung bình, hai cột ở màn hình nhỏ và một cột trên điện thoại hẹp.
+- Phát hiện và sửa lỗi CSS Selector trong Media Query.
+
+**Hover và Focus**
+- Điều chỉnh `box-shadow` để tăng hiệu ứng khi di chuyển chuột vào thẻ sản phẩm.
+- Kiểm tra `focus-visible` bằng phím Tab trên Chrome.
+
+**Kiểm tra và tự điều chỉnh**
+- Kiểm tra giao diện bằng Google Chrome và Chrome DevTools.
+- Phát hiện một số nhãn tiếng Việt có kiểu chữ và khoảng cách ký tự chưa đồng nhất.
+- Điều chỉnh `font-family`, `font-size`, `font-weight` và `letter-spacing`.
+- Kiểm tra lại giao diện trên máy tính và điện thoại.
+
+### 8.3. Công cụ sử dụng
+
+- Visual Studio Code: Chỉnh sửa mã HTML/CSS.
+- Google Chrome và Chrome DevTools: Chạy thử và kiểm tra responsive.
+- ChatGPT: Hỗ trợ phân tích mã nguồn, giải thích thuộc tính CSS và hướng dẫn xử lý vấn đề.
+- GitHub: Lưu trữ và cập nhật mã nguồn.
+
+### 8.4. Kết quả thực hiện
+
+Giao diện tiếp tục hiển thị đầy đủ bốn sản phẩm mẫu, bộ lọc và chức năng Xem nhanh. Các thẻ sản phẩm được điều chỉnh về kiểu chữ, khoảng cách, đường viền và hiệu ứng tương tác.
+
+Mã nguồn Buổi 2 được cập nhật vào repository thông qua commit `Practice HTML5 and CSS3 - Session 2`.
+
+**Đường dẫn mã nguồn:** https://github.com/thaonguyentran06/ecommerce-ui-improvement
+
+**Đường dẫn website:** https://thaonguyentran06.github.io/ecommerce-ui-improvement/
