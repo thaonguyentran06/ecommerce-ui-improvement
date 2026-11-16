@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 08 - JavaScript Foundations</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172b45;
+            color: white;
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0 0 10px;
+        }
+
+        header p {
+            margin: 0;
+            color: #dbe5f0;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .intro h2 {
+            margin-top: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .number {
+            color: #be3943;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .card h3 {
+            margin: 8px 0;
+            font-size: 18px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+            min-height: 44px;
+        }
+
+        .card a {
+            display: inline-block;
+            color: white;
+            background: #172b45;
+            text-decoration: none;
+            padding: 9px 15px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .card a:hover,
+        .card a:focus-visible {
+            background: #be3943;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 30px;
+            color: #172b45;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>LAB 08</h1>
+    <p>JavaScript 1: Language Foundations</p>
+    <p>Danh sách 11 bài thực hành JavaScript cơ bản</p>
+</header>
+
+<main>
+
+    <section class="intro">
+        <h2>Giới thiệu Lab 08</h2>
+        <p>
+            Lab 08 giúp sinh viên làm quen với JavaScript,
+            cách liên kết JavaScript với HTML, sử dụng biến,
+            chuỗi, mảng, hàm và đối tượng.
+        </p>
+        <p>
+            Dưới đây là kết quả thực hành 11 Exercise,
+            từ Exercise 8.1 đến Exercise 8.11.
+        </p>
+    </section>
+
+    <div class="grid">
+
+        <article class="card">
+            <span class="number">EXERCISE 8.1</span>
+            <h3>Enabling/Disabling JavaScript</h3>
+            <p>Kiểm tra JavaScript khi được bật và tắt.</p>
+            <a href="Exercise01/index.html">Xem kết quả</a>
+        </article>
+
+        <article class="card">
+            <span class="number">EXERCISE 8.2</span>
+            <h3>Embedded JavaScript</h3>
+            <p>Hiển thị hộp thoại Hello World bằng alert().</p>
+            <a href="lab08-walkthrough02.html">Xem kết quả</a>
+        </article>
+
+        <article class="card">
+            <span class="number">EXERCISE 8.3</span>
+            <h3>External JavaScript</h3>
+            <p>Liên kết file JavaScript riêng với HTML.</p>
+            <a href="lab08-exercise03.html">Xem kết quả</a>
+        </article>
+
+        <article class="card">
+            <span class="number">EXERCISE 8.4</span>
+            <h3>Using NoScript</h3>
+            <p>Hiển thị thông báo khi JavaScript bị tắt.</p>
+            <a href="lab08-exercise04.html">Xem kết quả</a>
+        </article>
+
+        <article class="card">
+            <span class="number">EXERCISE 8.5</span>
+            <h3>Browser Console</h3>
+            <p>Kiểm tra biến, phát hiện lỗi và sử dụng Console.</p>
+            <a href="lab08-exercise05.html">Xem kết quả</a>
+        </article>
+
+        <article class="card">
+            <span class="number">EXERCISE 8.6</span>
+            <h3>Built-in Objects</h3>
+            <p>Thực hành String, Date và Math.</p>
+            <a href="lab08-walkthrough06.html">Xem kết quả</a>
+        </article>
+
+        <article class="card">
+            <span class="number">EXERCISE 8.7</span>
+            <h3>Arrays</h3>
+            <p>Sử dụng mảng và vòng lặp tạo bảng lịch.</p>
+            <a href="lab08-walkthrough07.html">Xem kết quả</a>
+        </article>
+
+        <article class="card">
+            <span class="number">EXERCISE 8.8</span>
+            <h3>JavaScript Functions</h3>
+            <p>Viết hàm tạo năm ô DIV và kiểm tra phạm vi biến.</p>
+            <a href="lab08-walkthrough08.html">Xem kết quả</a>
+        </article>
+
+        <article class="card">
+            <span class="number">EXERCISE 8.9</span>
+            <h3>Functions as Objects</h3>
+            <p>Sử dụng hàm để tính tổng tiền và thuế.</p>
+            <a href="lab08-walkthrough09.html">Xem kết quả</a>
+        </article>
+
+        <article class="card">
+            <span class="number">EXERCISE 8.10</span>
+            <h3>JavaScript Objects</h3>
+            <p>Tạo các đối tượng đơn hàng bằng Constructor.</p>
+            <a href="lab08-walkthrough10.html">Xem kết quả</a>
+        </article>
+
+        <article class="card">
+            <span class="number">EXERCISE 8.11</span>
+            <h3>Arrays of Objects</h3>
+            <p>Hiển thị danh sách quốc gia cùng hình lá cờ.</p>
+            <a href="lab08-walkthrough11.html">Xem kết quả</a>
+        </article>
+
+    </div>
+
+    <a class="back" href="../index.html">
+        ← Quay lại trang chủ JavaScript Labs
+    </a>
+
+</main>
+
+<footer>
+    Lab 08 - JavaScript 1: Language Foundations
+</footer>
+
+</body>
+</html>
