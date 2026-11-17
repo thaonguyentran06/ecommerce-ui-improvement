@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab 10 - jQuery</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f6f8;
+    color: #222;
+}
+header {
+    background: #172b45;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+main {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+.intro, .card {
+    background: white;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+.intro { margin-bottom: 24px; }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+.number {
+    color: #be3943;
+    font-weight: bold;
+    font-size: 13px;
+}
+.card h3 { margin: 8px 0; }
+.card p {
+    color: #666;
+    min-height: 42px;
+}
+.card a {
+    display: inline-block;
+    background: #172b45;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+.card a:hover { background: #be3943; }
+.back {
+    display: inline-block;
+    margin-top: 30px;
+    color: #172b45;
+}
+footer {
+    text-align: center;
+    padding: 28px;
+    color: #666;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>LAB 10</h1>
+    <p>JavaScript 3: jQuery</p>
+    <p>Danh sách 10 bài thực hành</p>
+</header>
+
+<main>
+    <section class="intro">
+        <h2>Giới thiệu Lab 10</h2>
+        <p>
+            Lab 10 tập trung vào sử dụng jQuery để
+            thao tác với DOM, xử lý sự kiện,
+            tạo hiệu ứng animation và thực hiện GET Requests.
+        </p>
+    </section>
+
+    <div class="grid" id="labList"></div>
+
+    <a class="back" href="../index.html">
+        ← Quay lại trang chủ JavaScript Labs
+    </a>
+</main>
+
+<footer>Lab 10 - JavaScript 3: jQuery</footer>
+
+<script>
+const exercises = [
+    ["10.1", "Set Up jQuery", "Liên kết thư viện jQuery.", "lab10-walkthrough01.html"],
+    ["10.2", "Basic Selectors", "Truy xuất và thay đổi HTML.", "lab10-walkthrough01.html"],
+    ["10.3", "Advanced Selectors", "Sử dụng bộ chọn nâng cao.", "lab10-walkthrough03.html"],
+    ["10.4", "jQuery Listeners", "Xử lý sự kiện chuột.", "lab10-walkthrough04.html"],
+    ["10.5", "Inserting DOM Elements", "Chèn phần tử HTML.", "lab10-walkthrough05.html"],
+    ["10.6", "Simple jQuery Animation", "Hiệu ứng Fade và Slide.", "lab10-walkthrough06.html"],
+    ["10.7", "More jQuery Animation", "Xem trước hình ảnh.", "lab10-walkthrough07.html"],
+    ["10.8", "Complex Animations", "Chuỗi hiệu ứng Animate.", "lab10-walkthrough08.html"],
+    ["10.9", "GET Requests", "Lấy dữ liệu thành phố.", "lab10-walkthrough09.html"],
+    ["10.10", "jqXHR Handling", "Xử lý trạng thái yêu cầu dữ liệu.", "lab10-walkthrough10.html"]
+];
+
+document.getElementById("labList").innerHTML =
+    exercises.map(item => `
+        <article class="card">
+            <span class="number">EXERCISE ${item[0]}</span>
+            <h3>${item[1]}</h3>
+            <p>${item[2]}</p>
+            <a href="${item[3]}">Xem kết quả</a>
+        </article>
+    `).join("");
+</script>
+
+</body>
+</html>

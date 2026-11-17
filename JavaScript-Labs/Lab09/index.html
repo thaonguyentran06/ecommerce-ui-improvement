@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab 09 - DOM and Events</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f6f8;
+    color: #222;
+}
+header {
+    background: #172b45;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+main {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+.intro, .card {
+    background: white;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+.intro { margin-bottom: 24px; }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+.card h3 { margin: 8px 0; }
+.card p { color: #666; min-height: 42px; }
+.number {
+    color: #be3943;
+    font-size: 13px;
+    font-weight: bold;
+}
+.card a {
+    display: inline-block;
+    background: #172b45;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.card a:hover { background: #be3943; }
+.back {
+    display: inline-block;
+    margin-top: 30px;
+    color: #172b45;
+}
+footer {
+    text-align: center;
+    padding: 28px;
+    color: #666;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>LAB 09</h1>
+    <p>JavaScript 2: DOM and Events</p>
+    <p>Danh sách 8 bài thực hành</p>
+</header>
+
+<main>
+<section class="intro">
+    <h2>Giới thiệu Lab 09</h2>
+    <p>
+        Lab 09 tập trung vào truy xuất và thay đổi DOM,
+        xử lý sự kiện, kiểm tra biểu mẫu và sử dụng
+        công cụ gỡ lỗi JavaScript.
+    </p>
+</section>
+
+<div class="grid" id="labList"></div>
+
+<a class="back" href="../index.html">
+    ← Quay lại trang chủ JavaScript Labs
+</a>
+</main>
+
+<footer>Lab 09 - DOM and Events</footer>
+
+<script>
+const exercises = [
+    ["9.1", "Basic DOM Selection", "Lựa chọn và chỉnh sửa phần tử DOM.", "lab09-walkthrough01.html"],
+    ["9.2", "DOM Family Relations", "Kiểm tra quan hệ cha, con của DOM.", "lab09-walkthrough02.html"],
+    ["9.3", "Modifying the DOM", "Tạo, thêm và xóa phần tử HTML.", "lab09-walkthrough03.html"],
+    ["9.4", "Simple Event Handling", "Xử lý click, mouseover và mouseout.", "lab09-walkthrough04.html"],
+    ["9.5", "Responding to Load Events", "Xử lý sự kiện load.", "lab09-walkthrough05.html"],
+    ["9.6", "Debugging Events", "Đặt Breakpoint và kiểm tra sự kiện.", "lab09-walkthrough05.html"],
+    ["9.7", "Working with Forms", "Xử lý focus và blur.", "lab09-walkthrough07.html"],
+    ["9.8", "Form Validation", "Kiểm tra dữ liệu biểu mẫu.", "lab09-walkthrough08.html"]
+];
+
+document.getElementById("labList").innerHTML =
+    exercises.map(item => `
+        <article class="card">
+            <span class="number">EXERCISE ${item[0]}</span>
+            <h3>${item[1]}</h3>
+            <p>${item[2]}</p>
+            <a href="${item[3]}">Xem kết quả</a>
+        </article>
+    `).join("");
+</script>
+
+</body>
+</html>
