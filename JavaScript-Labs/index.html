@@ -2,134 +2,305 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript Labs - Portfolio</title>
-  <style>
-    * { box-sizing: border-box; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Labs | Trần Thảo Nguyên</title>
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-      line-height: 1.6;
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    header {
-      background: #202020;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f5f6f8;
+            color: #253247;
+            line-height: 1.7;
+        }
 
-    header h1 { margin-bottom: 8px; }
+        header {
+            background: #172b45;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
 
-    main {
-      max-width: 950px;
-      margin: 35px auto;
-      padding: 0 20px;
-    }
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
 
-    section {
-      background: white;
-      padding: 28px;
-      margin-bottom: 22px;
-      border-radius: 12px;
-      border: 1px solid #e5e5e5;
-    }
+        header p {
+            color: #d8e2f0;
+            margin-bottom: 0;
+        }
 
-    .lab-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-    }
+        main {
+            max-width: 1050px;
+            margin: 32px auto;
+            padding: 0 20px;
+        }
 
-    .lab-card {
-      background: #f8f8f8;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-    }
+        section {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            margin-bottom: 22px;
+        }
 
-    .lab-card a {
-      color: #b52c35;
-      font-weight: bold;
-    }
+        h2 {
+            margin-top: 0;
+            color: #172b45;
+        }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      color: #666;
-    }
-  </style>
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .avatar {
+            width: 125px;
+            height: 125px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #e4e9f0;
+        }
+
+        .profile-info p {
+            margin: 6px 0;
+        }
+
+        a {
+            color: #b83443;
+        }
+
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(240px, 1fr)
+            );
+            gap: 18px;
+        }
+
+        .lab-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            padding: 23px;
+            border-radius: 10px;
+        }
+
+        .lab-number {
+            color: #b83443;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .lab-card h3 {
+            margin: 10px 0;
+        }
+
+        .lab-card p {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .lab-card a {
+            display: inline-block;
+            background: #172b45;
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .lab-card a:hover {
+            background: #b83443;
+        }
+
+        .knowledge h3 {
+            margin-bottom: 5px;
+        }
+
+        .knowledge p {
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 29px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .profile {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <header>
+
+<header>
     <h1>MY JAVASCRIPT LABS</h1>
-    <p>Hành trình học JavaScript trong phát triển ứng dụng TMĐT</p>
-  </header>
+    <p>Portfolio thực hành Chương 4 – JavaScript</p>
+    <p>Môn Phát triển ứng dụng thương mại điện tử</p>
+</header>
 
-  <main>
+<main>
+
     <section>
-      <h2>Thông tin sinh viên</h2>
-      <p>Họ và tên: Trần Thảo Nguyên </p>
-      <p>Mã số sinh viên: 31241026813</p>
-      <p>Lớp học phần: 26C1INF50902702</p>
-      <p>GitHub: <a href="https://github.com/thaonguyentran06">Trang GitHub cá nhân</a></p>
+        <h2>Thông tin sinh viên</h2>
+
+        <div class="profile">
+
+            <div class="profile-info">
+                <p><strong>Họ và tên:</strong> Trần Thảo Nguyên</p>
+                <p><strong>MSSV:</strong> 31241026813</p>
+                <p><strong>Lớp học phần:</strong> 26C1INF50902702</p>
+                <p>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/thaonguyentran06">
+                        thaonguyentran06
+                    </a>
+                </p>
+            </div>
+        </div>
     </section>
 
     <section>
-      <h2>Giới thiệu bài thực hành</h2>
-      <p>
-        Trong Chương 4, em thực hiện ba bài Lab nhằm tìm hiểu
-        JavaScript và cách xây dựng các chức năng tương tác
-        trên website thương mại điện tử.
-      </p>
+        <h2>Giới thiệu bài thực hành</h2>
+
+        <p>
+            Trong Chương 4, em thực hiện ba bài Lab nhằm
+            tìm hiểu và ứng dụng JavaScript trong phát triển
+            website thương mại điện tử.
+        </p>
+
+        <p>
+            Nội dung thực hành bao gồm kiến thức nền tảng
+            JavaScript, thao tác với DOM, xử lý sự kiện,
+            kiểm tra biểu mẫu và sử dụng thư viện jQuery
+            để xây dựng các chức năng tương tác trên website.
+        </p>
     </section>
 
     <section>
-      <h2>Danh sách bài Lab</h2>
+        <h2>Danh sách bài Lab</h2>
 
-      <div class="lab-list">
-        <article class="lab-card">
-          <h3>Lab 08</h3>
-          <p>JavaScript 1: Language Foundations</p>
-          <a href="Lab08/">Xem bài Lab 08</a>
-        </article>
+        <div class="lab-grid">
 
-        <article class="lab-card">
-          <h3>Lab 09</h3>
-          <p>JavaScript 2: DOM and Events</p>
-          <a href="Lab09/">Xem bài Lab 09</a>
-        </article>
+            <article class="lab-card">
+                <span class="lab-number">LAB 08</span>
+                <h3>JavaScript 1: Language Foundations</h3>
+                <p>
+                    11 Exercise về cú pháp JavaScript,
+                    biến, String, Date, Math, Array,
+                    Function và Object.
+                </p>
+                <a href="Lab08/">Xem Lab 08</a>
+            </article>
 
-        <article class="lab-card">
-          <h3>Lab 10</h3>
-          <p>JavaScript 3: jQuery</p>
-          <a href="Lab10/">Xem bài Lab 10</a>
-        </article>
-      </div>
+            <article class="lab-card">
+                <span class="lab-number">LAB 09</span>
+                <h3>JavaScript 2: DOM and Events</h3>
+                <p>
+                    8 Exercise về lựa chọn phần tử DOM,
+                    xử lý sự kiện, Debugging,
+                    Form và Form Validation.
+                </p>
+                <a href="Lab09/">Xem Lab 09</a>
+            </article>
+
+            <article class="lab-card">
+                <span class="lab-number">LAB 10</span>
+                <h3>JavaScript 3: jQuery</h3>
+                <p>
+                    10 Exercise về jQuery Selectors,
+                    Events, Animation,
+                    GET Requests và jqXHR.
+                </p>
+                <a href="Lab10/">Xem Lab 10</a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="knowledge">
+        <h2>Kiến thức và kỹ năng đã học được</h2>
+
+        <h3>Lab 08 – JavaScript cơ bản</h3>
+        <p>
+            Em tìm hiểu cách nhúng JavaScript vào HTML,
+            sử dụng file JavaScript riêng và kiểm tra
+            chương trình bằng Browser Console.
+            Ngoài ra, em thực hành xử lý chuỗi,
+            ngày giờ, phép toán, mảng, hàm và đối tượng.
+        </p>
+
+        <h3>Lab 09 – DOM and Events</h3>
+        <p>
+            Em học cách truy xuất và thay đổi phần tử HTML
+            bằng DOM, sử dụng các sự kiện click,
+            mouseover, focus và blur.
+            Em cũng thực hành kiểm tra dữ liệu biểu mẫu
+            và sử dụng Breakpoint để tìm lỗi JavaScript.
+        </p>
+
+        <h3>Lab 10 – jQuery</h3>
+        <p>
+            Em làm quen với thư viện jQuery, các bộ chọn
+            phần tử, phương thức xử lý sự kiện,
+            thao tác DOM và animation.
+            Bên cạnh đó, em thực hành gửi yêu cầu GET,
+            nhận dữ liệu JSON và xử lý kết quả bằng jqXHR.
+        </p>
     </section>
 
     <section>
-      <h2>Kiến thức và kỹ năng học được</h2>
-      <p>
-        Nội dung này sẽ được cập nhật sau khi hoàn thành
-        các Exercise của Lab 08, Lab 09 và Lab 10.
-      </p>
+        <h2>Tự đánh giá sau khi hoàn thành</h2>
 
-      <h2>Tự đánh giá</h2>
-      <p>
-        Phần tự đánh giá sẽ được hoàn thiện sau khi thực hành
-        và kiểm tra kết quả của cả ba bài Lab.
-      </p>
+        <p>
+            Sau khi hoàn thành ba bài Lab, em đã hiểu rõ hơn
+            vai trò của JavaScript trong việc tạo các chức năng
+            tương tác trên website. Lab 08 giúp em làm quen
+            với các kiến thức nền tảng như biến, mảng, hàm
+            và đối tượng. Lab 09 giúp em hiểu cách JavaScript
+            thay đổi nội dung HTML và phản hồi thao tác của
+            người dùng. Đối với em, Lab 10 là phần khá khó
+            vì phải kết hợp thư viện jQuery, các hiệu ứng và
+            yêu cầu lấy dữ liệu từ dịch vụ web. Trong quá trình
+            thực hành, em học được cách sử dụng Console
+            và DevTools để kiểm tra lỗi, thay vì chỉ quan sát
+            giao diện. Những kiến thức này có thể áp dụng
+            để xây dựng biểu mẫu đăng ký, kiểm tra dữ liệu,
+            cập nhật thông tin sản phẩm và cải thiện
+            trải nghiệm người dùng trên website thương mại
+            điện tử. Em cần tiếp tục luyện tập JavaScript
+            để có thể tự xây dựng các chức năng phức tạp hơn.
+        </p>
     </section>
-  </main>
 
-  <footer>
-    Bài thực hành JavaScript - Chương 4
-  </footer>
+</main>
+
+<footer>
+    Trần Thảo Nguyên | JavaScript Labs – Chương 4
+</footer>
+
 </body>
 </html>
